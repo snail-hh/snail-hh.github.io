@@ -18,6 +18,7 @@ $(function() {
         var $this = $(this);
         $('.place').toggleClass('other-icon');
         $('.header').toggleClass('to-right');
+        $('.email').toggleClass('to-right');
         $('.nav-public').toggleClass('to-right');
         $('.main').toggleClass('to-right');
 
