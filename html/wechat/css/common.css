@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 通用样式 开始 */
+.back-full { width:100%; height:100%; margin:0; position:fixed; top:0; right:0; bottom:0; left:0; z-index:100; background:rgba(0,0,0,.7);}
+.co-text { padding:0 10px 0 20px;}
+/* 头部 页面标题 返回链接 */
+.co-mainheader-1 { width:100%; max-width:640px; min-width:320px; height:50px; margin:0 auto; position:fixed; top:0; z-index:100; background:#fff; font-size:18px; line-height:50px; text-align:center;}
+.co-mainheader-1 .return { width:40px; padding:5px; position:absolute; top:-5px; left:5%;}
+.co-mainheader-1 .return .fa { font-size:24px; line-height:1;}
+.co-space-2 { height:50px;}
+/* box-2 */
+.box-2 { background:#f8f8f8; clear:both; overflow:hidden; zoom:1;}
+/* box-3 */
+.box-3 { margin:20px; border-top:solid 1px #eee; line-height:50px; clear:both; overflow:hidden; zoom:1;}
+.box-3 dt { width:25%; height:51px; float:left; background:#f8f8f8; text-align:center;}
+.box-3 dd { width:75%; height:51px; float:left;}
+.box-3 dt b , .box-3 dd a  , .box-3 dd b { height:50px; border:solid 1px #eee; border-top:0; display:block;}
+.box-3 dd a , .box-3 dd b { padding-left:30px; border-left:0;}
+.box-3 dd input { width:95%; height:48px; line-height:48px;}
+/* 条件选择 */
+.co-condition .triangle { font-size:30px; line-height:1; color:#fff;}
+.co-condition ul { width:240px; margin:-18px auto 0 auto; border-radius:3px; box-shadow:1px 1px 3px rgba(0,0,0,.3); font-size:16px; line-height:50px; background:#fff; clear:both; overflow:hidden; zoom:1;}
+.co-condition li { border-bottom:solid 1px #eee;}
+.co-condition li:last-child { border:0;}
+.co-condition li a { display:block;}
+
+/* 通用样式 结束 */
+
+
+
+
+/* 通用-选择日期 通用-选择城市 开始 */
+.choose-date section , .choose-city section { width:90%; max-width:576px; min-width:288px; border-radius:3px; background:#fff;}
+/* 通用-选择日期 */
+.choose-date section { margin:70px auto 0 auto; clear:both; overflow:hidden; zoom:1;}
+.choose-date section .month-year { height:50px; font-size:20px; line-height:50px; text-align:center; background:#eee; color:#ff5367;}
+.choose-date section .month-year a { padding:0 20px; font-size:28px;}
+.choose-date section li { width:14.28571428%; float:left; font-size:18px; line-height:2; text-align:center;}
+.choose-date section li a { height:55px; display:block; border-bottom:solid 1px #eee; border-right:solid 1px #eee;}
+.choose-date section li:nth-child(7n+1) a , .choose-date li:nth-child(7n) a { color:#ff5367;}
+.choose-date li:nth-child(7n) a {  border-right:0;}
+.choose-date section .week li { line-height:55px;}
+.choose-date section .day p { font-size:12px; line-height:1; color:#bbb;}
+@media screen and (max-width: 400px) {
+.choose-date section .day p { font-size:10px;}
+}
+/* 通用-选择城市 */
+.choose-city section { height:94%; margin:auto; position:absolute; top:0; right:0; bottom:0; left:0; border-radius:3px; line-height:45px; background:#fff; overflow:auto;}
+.choose-city section li { padding:0 10px; border-bottom:solid 1px #eee;}
+.choose-city section li a { display:block;}
+/* 通用-选择日期 通用-选择城市 结束 */
+
+
+
+
+/* 2-产品详情页 2-product-details.html 开始 */
+/* 广告图片 */
+.product-details .ad-pic { width:100%; position:relative; clear:both; overflow:hidden; zoom:1;}
+.product-details .ad-pic li { width:100%; min-height:200px; float:left; position:relative; line-height:0;}
+.product-details .ad-pic li img { height:auto; min-height:200px;}
+.product-details .ad-pic .content { width:100%; height:100px; position:absolute; bottom:0; line-height:24px; background:rgba(0,0,0,.5); color:#fff;}
+.product-details .ad-pic .content a { color:#fff;}
+.product-details .ad-pic .content h3 { height:48px; padding:10px 10px 0 10px; overflow:hidden; font-size:18px;}
+.product-details .ad-pic .content p { padding:10px 10px 0 10px;}
+/* 价格-定购 */
+.product-details .pay { height:40px; padding:15px; border-top:solid 1px #eee; line-height:40px;}
+.product-details .pay b { font-size:24px; color:#ff5367;}
+.product-details .pay button { width:100px; float:right;}
+/* 团期价格 行程介绍 费用说明 温馨提示 */
+.product-details .box-1 { height:60px; font-size:16px; line-height:60px; color:#444;}
+.product-details .box-1 i { padding:0 15px;}
+.product-details .box-1 a { float:right; font-size:24px;}
+.product-details .box-2 { font-size:12px;}
+.product-details .price-list { padding:10px 0 10px 30px; line-height:2;}
+.product-details .price-list li { padding-right:30px; float:left;}
+.product-details .price-list li b { color:#ff5367;}
+.product-details .text { padding:15px;}
+.product-details .text p { padding:3px 0;}
+.product-details .plan-list li { padding:0 0 10px 60px; margin:0 10px; border-bottom:solid 1px #eee;}
+.product-details .plan-list li:last-child { border:0;}
+.product-details .plan-list li b { width:50px; height:50px; margin:15px 0 0 -60px; float:left; border-radius:100px 100px 0 100px; text-align:center; line-height:50px; font-size:16px; background:#4abdb5; color:#fff;}
+.product-details .plan-list li p { padding-top:15px;}
+/* 2-产品详情页 2-product-details.html 结束 */
+
+
+
+
+/* 3-导航页 3-navigation-1.html 3-navigation-2.html 3-navigation-3.html 3-navigation-4.html 开始 */
+/* 头部 */
+.navigation .co-mainheader-2 { height:40px; padding:90px 20px 0 20px; font-size:18px;}
+/* 提示地点 */
+.navigation .box-1 { margin-top:10px; padding-bottom:10px;}
+.navigation .co-text-2 { padding:10px 10px 0 20px; font-size:18px;}
+.navigation .hint { padding:0 10px 10px 20px;}
+.navigation .hint li { width:130px; height:50px; margin:10px 10px 0 0; border:solid 1px #eee; float:left; background:#f8f8f8;}
+.navigation .hint li a { width:130px; height:50px; display:block; line-height:50px; overflow:hidden; text-align:center;}
+.navigation .box-1 .hint li { font-size:16px;}
+/* 热门店铺 */
+.navigation .shop .title { height:26px; padding:2px; margin-left:10px; line-height:16px;}
+.navigation .shop .title h4 { height:16px; padding-left:5px; border-left:solid 5px #2b97e1; float:left; font-size:16px; color:#2b97e1;}
+.navigation .shop ul { border-top:solid 1px #eee;}
+.navigation .shop li { width:33.3333%; float:left;}
+.navigation .shop li a { height:115px; padding:10px 5px 5px 5px; display:block; border-bottom:solid 1px #eee; border-right:solid 1px #eee; font-size:14px; line-height:25px; text-align:center; overflow:hidden;}
+.navigation .shop li:nth-child(3n) a { border-right:0;}
+.navigation .shop li a img { width:80px; height:80px; border:solid 3px #fff; border-radius:100px; box-shadow:2px 2px 3px rgba(0,0,0,.5);}
+/* 3-导航页 3-navigation-1.html 3-navigation-2.html 3-navigation-3.html 3-navigation-4.html 结束 */
+
+
+
+
+/* 4-订单展示页 4-order-show-1.html 4-order-show-2.html 开始 */
+.order-show { position:relative;}
+/* 头部 */
+.order-show .co-mainheader-1 .fa-angle-down { padding-left:5px; font-size:24px;}
+/* 订单列表 */
+.order-show .order-list { border-top:solid 1px #eee;}
+.order-show .order-list li { padding:10px 20px; border-bottom:solid 1px #eee;}
+.order-show .order-list li p { padding-top:5px; color:#bbb;}
+.order-show .order-list li p b { float:right;}
+/* 条件选择 */
+.order-show .co-condition { margin:0 auto; position:absolute; top:40px; right:0; left:0; text-align:center;}
+/* 4-订单展示页 4-order-show-1.html 4-order-show-2.html 结束 */
+
+
+
+
+/* 5-订单提交页 5-order-submit.html 开始 */
+/* 产品名-价格 */
+.order-submit .name-price { padding:5px 20px; font-size:18px; background:#f8f8f8;}
+.order-submit .name-price p { font-size:24px; text-align:right; color:#ff5367;}
+/* 产品信息 */
+.order-submit .product button { width:25px; height:25px; margin-top:12px; float:left; font-size:25px; line-height:25px;}
+.order-submit .product button.grey { background:#f0f0f0; color:#444;}
+.order-submit .product input { width:48px; height:23px; margin:12px 10px 0 10px; border:solid 1px #eee; float:left; text-align:center; line-height:23px; background:#f8f8f8;}
+/* 提交按钮 */
+.order-submit .submit { margin:-10px 20px 0 20px;}
+.order-submit .submit button { width:100%;}
+/* 5-订单提交页 5-order-submit.html 结束 */
+
+
+
+
+/* 6-线路列表页 6-travel-list-1.html 6-travel-list-2-1.html 6-travel-list-2-2.html 6-travel-list-3.html 开始 */
+.co-mainheader-1 .filter-a { height:40px; padding:0 15px; border:0; display:block; position:absolute; top:5px; right:10px; border-radius:3px; font:18px/40px '微软雅黑','宋体',Arial; text-align:center; background:#ff5367; color:#fff;}
+/* 条件选择 */
+.travel-list .choose { height:50px; position:relative; overflow:visible; background:#f8f8f8;}
+.travel-list .choose .sort { height:50px; border-right:solid 1px #eee; text-align:center;}
+.travel-list .choose .sort li { width:33.3333%; float:left; position:relative; font-size:16px; line-height:50px;}
+.travel-list .choose .sort li a { padding-right:15px; border-right:solid 1px #eee; display:block; color:#ff5367;}
+.travel-list .choose .sort li.hover a { background:#f8f8f8; color:#444;}
+.travel-list .choose .sort li:last-child a { border-right:0;}
+.travel-list .choose .sort li a i { height:24px; margin:auto 0; position:absolute; top:0; bottom:0; font-size:24px; line-height:24px;}
+.travel-list .choose .co-condition { position:absolute; top:38px;}
+.travel-list .choose .co-condition li { clear:both; overflow:hidden; zoom:1;}
+.travel-list .choose .co-condition li a { padding:0 20px;}
+.travel-list .choose .co-condition li button { width:100px; margin:10px 0 10px 13px;}
+.travel-list .choose .co-condition li b { padding:0 20px; display:block;}
+.travel-list .choose .co-condition li input { width:88px; height:30px; margin-left:13px; padding:0 5px; border:solid 1px #eee; float:left;}
+.travel-list .choose .co-condition li input:last-child { margin-left:0;}
+.travel-list .choose .co-condition li span { padding:0 3px 15px 3px; float:left; line-height:30px;}
+.travel-list .choose .sort-1 .triangle { padding-left:80px;}
+.travel-list .choose .sort-2 { margin:0 auto; right:0; left:0;}
+.travel-list .choose .sort-2 .triangle { text-align:center;}
+.travel-list .choose .sort-3 { right:10px;}
+.travel-list .choose .sort-3 .triangle { padding-right:80px; text-align:right;}
+/* 列表展示 */
+.travel-list .line-list { margin:0 10px;}
+/* 6-线路列表页 6-travel-list-1.html 6-travel-list-2-1.html 6-travel-list-2-2.html 6-travel-list-3.html 结束 */
+
+
+
+/* 7-修改个人信息页 7-update.html 开始 */
+.update .submit { margin:-10px 20px 0 20px;}
+.update .submit button { width:100px; margin-left:20px; float:right;}
+/* 7-修改个人信息页 7-update.html 结束 */
+
+
+
+/* 8-用户中心页 8-user-center.html 开始 */
+/* 头像-用户名 */
+.user-center .user { height:130px; padding-top:30px; font-size:16px; line-height:2; text-align:center; color:#fff; text-shadow:0 0 3px rgba(0,0,0,.55); background:url(../images/back-header.jpg) center no-repeat;}
+.user-center .user img { width:75px; height:75px; margin:0 auto; border:solid 3px rgba(255,255,255,.35); display:block; border-radius:100px; box-shadow:1px 1px 5px rgba(0,0,0,.5);}
+/* 用户信息 */
+.user-center .info { padding-top:10px;}
+.user-center .info li { padding:0 50px 0 30px; border-bottom:solid 1px #eee; position:relative; font-size:16px; line-height:50px;}
+.user-center .info li i { height:50px; margin:auto; display:block; position:absolute; top:0; right:10px; bottom:0; font-size:32px; line-height:50px;}
+/* 8-用户中心页 8-user-center.html 结束 */
+
+
+
+/* 9-筛选页 9-filter.html 开始 */
+/* 头像-用户名 */
+.filter .box-1 { padding:0 0.6%; background:#f8f8f8;}
+.filter .box-1 h6 { height:40px; padding:0 10px; line-height:40px; font-size:16px;}
+.filter .submit button { width:100%; margin:10px 0;}
+/* 目的地 */
+.filter .province li , .filter .days li { width:23.6%; height:55px; padding:0 0.7% 10px 0.7%; float:left;}
+.filter .province li a , .filter .days li a { height:53px; padding:0 2%; border:solid 1px #eee; display:block; border-radius:3px; line-height:53px; text-align:center; background:#fff;}
+
+.filter .province li.city { width:95%; height:auto; padding:10px 1% 0 1%; margin:0 1% 10px 1%; border-radius:3px; background:#fff; clear:both; overflow:hidden; zoom:1;}
+.filter .province li.city li { width:24%; height:30px; padding:0 0.5%; margin-bottom:10px;}
+.filter .province li.city li a { height:30px; border:0; font-size:12px; line-height:30px; color:#666; background:#f2f2f2;}
+/* 行程天数 */
+.filter .days li { width:auto;}
+.filter .days li a { padding:0 30px;}
+.filter .province li a:hover , 
+.filter .province li a.hover , 
+.filter .province li.city li a:hover , 
+.filter .province li.city li a.hover , 
+.filter .days li a:hover , 
+.filter .days li a.hover { background:#ff5367; color:#fff;}
+/* 出发日期 价格区间 */
+.filter .other input { width:35%; height:53px; padding:0 10px; margin:0 10px; margin-bottom:10px; border:solid 1px #eee; float:left; border-radius:3px; line-height:53px; background:#fff;}
+.filter .other i {float:left; line-height:55px;}
+/* 9-筛选页 9-filter.html 结束 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
