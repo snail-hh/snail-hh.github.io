@@ -66,17 +66,18 @@
     </nav>
     <div class="main htmlcss-web">
       <ul class="grid-block small-up-1 medium-up-1 large-up-2 list-pic">
-        <li class="column con-4"><a href="index.html" title="个人求职网站" class="clearfix smooth-05s scale-07 line">
-            <div class="pic"><img src="images/htmlcss_pic_4.jpg" alt="个人求职网站"></div>
-            <div class="title">个人求职网站</div>
+        <li class="column con-4"><a href="index.html" title="个人兴趣网站" class="clearfix smooth-05s scale-07 line">
+            <div class="pic"><img src="images/htmlcss_pic_4.jpg" alt="个人兴趣网站"></div>
+            <div class="title">个人兴趣网站</div>
             <div class="text"><p>使用foundation框架，Jade模板，Gulp工具，Sass预编译工具</p><p>Chrome、Firefox、Safari、Opera 25+ (not Mini)、IE10–11、iOS 7–8 (iPhone)、iOS 7–8 (iPad)、Android 4.2+ (Tablet & Phone)、Windows Phone 8+、Surface Tablet</p></div>
-            <pre class="language-html"><code class="language-html">- var data_loader1 = site.data.loader[page.loader]
-#loader.loader.smooth-1s
-	.loader-circle.smooth-1s
-		img(src="#{data_loader.src}",alt="#{data_loader.alt}")
-	.icon.smooth-1s
-		i(class="icon iconfont #{data_loader.class}") &#xe#{data_loader.icon}
-	.back.smooth-1s</code></pre>
+            <pre class="language-html"><code class="language-html">- each list in data.nav
+ div(class= list.class ? list.class : '')
+	a(href=list.href,title=list.title,) text
+	 ul
+		- each sub in list.subnav
+		 li
+		  a(href='#',title=sub,) text
+</code></pre>
             <div class="line-top smooth-05s"></div>
             <div class="line-right smooth-05s"></div>
             <div class="line-bottom smooth-05s"></div>
