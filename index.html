@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SNAIL-HH--个人简历</title>
+    <title>SNAIL-HH--个人求职简历</title>
     <meta charset="utf8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,114 +31,416 @@
     <link href="styles/vendor.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
   </head>
-  <body>
-    <div id="loader" class="loader smooth-1s">
-      <div class="loader-circle smooth-1s"><img src="images/loader_resume.svg" alt="个人简历"></div>
-      <div class="icon smooth-1s"><i class="icon iconfont resume">&#xe610;</i></div>
-      <div class="back smooth-1s"></div>
+  <style>html,body{height:auto;}</style>
+  <body data-spy="scroll" data-target="#nav-ul">
+    <div id="loader">
+      <div class="loader"></div>
     </div>
-    <div class="public">
-      <header role="banner" class="header">
-        <div class="main_menu">
-          <div class="place smooth-05s"><i class="icon iconfont">&#xe61c;</i><i class="icon iconfont">&#xe615;</i></div>
+    <header role="banner" id="home" class="header smooth-no">
+      <div class="content">
+        <div class="logo">
+          <h1>SNAIL-HH</h1>
         </div>
-        <div class="logo smooth-1s"><a href="index.html" title="SNAIL-HH">SNAIL-HH</a></div>
-        <div class="email"><i class="icon iconfont">&#xe634;</i>284043281@qq.com</div>
-      </header>
-      <footer role="contentinfo" class="footer"><small>©2015 - Other websites All Rights Reserv</small>
-        <div class="qr-code"><i class="icon iconfont">&#xe6a5;</i>
-          <div class="pic"><img src="images/qr_code.png" alt="SNAIL-HH qr-code"></div>
+        <h5 class="pag-ename">个人求职简历</h5>
+        <h6 class="jobs">前端开发 网页设计</h6><img src="images/header_back.jpg" class="none">
+      </div>
+      <nav id="mainnav" role="navigation" class="nav-public smooth-05s">
+        <div class="row container">
+          <div data-responsive-toggle="example-menu" data-hide-for="medium" class="title-bar">
+            <div class="title-bar-title logo"><a href="#" title="SNAIL-HH">SNAIL-HH</a></div>
+            <button type="button" data-toggle class="icon iconfont">&#xe61c;</button>
+          </div>
+          <div id="example-menu" class="top-bar">
+            <div class="menu-text logo"><a href="#" title="SNAIL-HH">SNAIL-HH</a></div>
+            <div data-dropdown-menu="" class="dropdown menu">
+              <ul id="nav-ul">
+                <li><a href="#home" title="首页" class="link-inpage smooth-no">首页</a></li>
+                <li><a href="#about" title="个人介绍" class="link-inpage smooth-no">个人介绍</a></li>
+                <li><a href="#work" title="工作经历" class="link-inpage smooth-no">工作经历</a></li>
+                <li><a href="#skills" title="技能特长" class="link-inpage smooth-no">技能特长</a></li>
+                <li><a href="#expectation" title="求职意向" class="link-inpage smooth-no">求职意向</a></li>
+                <li><a href="#htmlcss" title="前端开发" class="link-inpage smooth-no">前端开发</a></li>
+                <li><a href="#webdesign" title="页面设计" class="link-inpage smooth-no">页面设计</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </footer>
-    </div>
-    <nav role="navigation" class="nav-public">
-      <ul>
-        <li><a href="index.html" title="SNAIL-HH--个人简历" class="resume"><i class="icon iconfont">&#xe610;</i>
-            <div class="text">个人简历</div>
-            <div class="line-button smooth-05s"></div></a></li>
-        <li><a href="htmlcss.html" title="SNAIL-HH--前端制作" class="htmlcss"><i class="icon iconfont">&#xe61b;</i>
-            <div class="text">前端制作</div>
-            <div class="line-button smooth-05s"></div></a></li>
-        <li><a href="webdesign.html" title="SNAIL-HH--页面设计" class="webdesign"><i class="icon iconfont">&#xe629;</i>
-            <div class="text">页面设计</div>
-            <div class="line-button smooth-05s"></div></a></li>
-      </ul>
-    </nav>
-    <div class="main resume-web">
+      </nav>
+    </header>
+    <div class="index clearfix">
       <article role="article" class="clearfix about">
-        <div class="clearfix content smooth-2s">
-          <div class="pic"><img src="images/photo.png" alt="SNAIL-HH--头像"></div>
-          <div class="title">ABOUT <b>ME</b></div>
-          <div class="text">熟练掌握web主流css框架（bootstrap,foundation），前端开发流工具（grunt、gulp），css预编译工具（sass），nodejs及jade模板。有中小型网站、手机网站、微信设计制作及平面设计经验。</div>
+        <div id="about" class="location scrollspy"></div>
+        <div class="my-pict">
+          <div class="overfly"></div>
+          <h2>SNAIL-HH</h2>
+          <h5>中国 • 湖南省 • 长沙市</h5><img src="images/my_pict.jpg" class="none">
         </div>
+        <div class="my-desc">
+          <div class="hello">Hello There!</div>
+          <div class="text">多年前端开发经验，良好的编码习惯；精通html5+css3相关开发技术，精通页面布局，熟悉web 标准，对前端模块化、可维护性等相关知识、各种常见跨浏览器、跨设备问题，有深入的了解和实践经验；熟练使用vue，前后端分离开发经验；熟练使用Bootstrap、element UI、vue-element-admin、Vant等开发框架；熟练使用sass, gulp前端自动化构建工具；熟练使用echarts可视化图表库及v-charts；精通网页设计，熟练使用PS、AI等修图软件；有多个开发移动平台项目、后台系统项目、触摸屏项目、大屏前端应用页面经验。</div>
+          <ul class="contact">
+            <li><i class="icon iconfont">&#xe634;</i><b>邮箱：</b><span>284043281@qq.com</span></li>
+            <li><i class="icon iconfont">&#xe606;</i><b>城市：</b><span>中国 • 湖南省 • 长沙市</span></li>
+            <li><i class="icon iconfont">&#xe636;</i><b>主页：</b><span>http://www.snail-hh.com/</span></li>
+          </ul>
+        </div>
+      </article>
+      <article role="article" class="container-medium clearfix services">
+        <ul class="grid-block medium-up-3 small-up-1">
+          <li class="column"><i class="icon iconfont">&#xe7bb;</i>
+            <p>前端开发</p>
+          </li>
+          <li class="column"><i class="icon iconfont">&#xe6b9;</i>
+            <p>页面设计</p>
+          </li>
+          <li class="column"><i class="icon iconfont">&#xe62f;</i>
+            <p>行政人事</p>
+          </li>
+        </ul>
       </article>
       <article role="article" class="clearfix work">
-        <div class="clearfix content smooth-2s">
-          <div class="title"><b>WORK</b> EXPERIENCE</div>
-          <dl class="row">
-            <dt class="small-4 large-4 columns">2004.05-2005.03</dt>
-            <dd class="small-8 large-8 columns">从事网站制作（ASP+网页设计）工作</dd>
-          </dl>
-          <dl class="row">
-            <dt class="small-4 large-4 columns">2005.04-2011.03</dt>
-            <dd class="small-8 large-8 columns">从事网页设计工作</dd>
-          </dl>
-          <dl class="row">
-            <dt class="small-4 large-4 columns">2011.04-2014.09</dt>
-            <dd class="small-8 large-8 columns">湖南浩基信息技术有限公司<br>职位：网页设计转行政人事主管</dd>
-          </dl>
-          <dl class="row">
-            <dt class="small-4 large-4 columns">2014.12-2016.02</dt>
-            <dd class="small-8 large-8 columns">湖南红客乐游网络科技有限公司<br>职位：网站前端+网页设计</dd>
-          </dl>
+        <div id="work" class="location scrollspy"></div>
+        <div class="shape-bottom">
+          <div class="title">
+            <h6 class="typename">工作经历</h6>
+            <div class="title-icon"><i class="icon iconfont">&#xe614;</i></div>
+          </div>
+        </div>
+        <div class="container-medium">
+          <div class="list">
+            <ul class="clearfix">
+              <li><i class="icon iconfont">&#xe614;</i><span class="number">01</span>
+                <div class="text"><b>前端开发+网页设计</b>
+                  <p>湖南行知聚能源科技发展有限公司</p><span>2018.09--Now</span>
+                </div>
+              </li>
+              <li><i class="icon iconfont">&#xe614;</i><span class="number">02</span>
+                <div class="text"><b>前端开发+网页设计</b>
+                  <p>长沙泰启企业管理咨询有限公司</p><span>2017.03--2018.03</span>
+                </div>
+              </li>
+              <li><i class="icon iconfont">&#xe614;</i><span class="number">03</span>
+                <div class="text"><b>前端开发</b>
+                  <p>湖南土流信息有限公司</p><span>2016.03--2016.12</span>
+                </div>
+              </li>
+              <li><i class="icon iconfont">&#xe614;</i><span class="number">04</span>
+                <div class="text"><b>前端开发+网页设计</b>
+                  <p>湖南红客乐游网络科技有限公司</p><span>2014.12--2016.02</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </article>
-      <article role="article" class="row other">
-        <div class="clearfix content smooth-2s">
-          <div role="group" class="medium-12 large-6 columns skills"><i class="icon iconfont">&#xe61a;</i>
-            <div class="title text-center">MY <b>SKILLS</b></div>
-            <ul class="row">
-              <li class="small-12 medium-6 columns">Sublime Text<span>80%</span></li>
-              <li class="small-12 medium-6 columns">Photoshop<span>70%</span></li>
-              <li class="small-12 medium-6 columns">Dreamwaver<span>80%</span></li>
-              <li class="small-12 medium-6 columns">Flash<span>50%</span></li>
-              <li class="small-12 medium-6 columns">Illustrator<span>40%</span></li>
-            </ul>
+      <article role="article" class="clearfix skills">
+        <div id="skills" class="location scrollspy"></div>
+        <div class="shape-bottom">
+          <div class="title">
+            <h6 class="typename">技能特长</h6>
+            <div class="title-icon"><i class="icon iconfont">&#xe61a;</i></div>
           </div>
-          <div role="group" class="medium-12 large-6 columns expectation"><i class="icon iconfont">&#xe621;</i>
-            <div class="title text-center">MY <b>EXPECTATION</b></div>
-            <ul>
-              <li>求职意向：网站前端、网页设计</li>
-              <li>薪酬要求：10K元/月</li>
-              <li>其它要求：五险</li>
-            </ul>
+        </div>
+        <div class="container-medium">
+          <ul class="grid-block medium-up-4 small-up-2 list">
+            <li class="column"><span data-percent="85" class="chart"><span class="percent"></span></span>
+              <p>HTML5</p>
+            </li>
+            <li class="column"><span data-percent="85" class="chart"><span class="percent"></span></span>
+              <p>CSS3/SASS</p>
+            </li>
+            <li class="column"><span data-percent="80" class="chart"><span class="percent"></span></span>
+              <p>VUE</p>
+            </li>
+            <li class="column"><span data-percent="80" class="chart"><span class="percent"></span></span>
+              <p>Echarts</p>
+            </li>
+            <li class="column"><span data-percent="75" class="chart"><span class="percent"></span></span>
+              <p>Element UI</p>
+            </li>
+            <li class="column"><span data-percent="80" class="chart"><span class="percent"></span></span>
+              <p>Vant UI</p>
+            </li>
+            <li class="column"><span data-percent="80" class="chart"><span class="percent"></span></span>
+              <p>VS Code</p>
+            </li>
+            <li class="column"><span data-percent="80" class="chart"><span class="percent"></span></span>
+              <p>PS/AI</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article role="article" class="clearfix expectation">
+        <div id="expectation" class="location scrollspy"></div>
+        <div class="box-back">
+          <div class="clearfix container-medium">
+            <div class="box"><img src="images/photo.png" alt="SNAIL-HH" class="photo">
+              <h6 class="typename">求职意向</h6>
+              <ul class="list">
+                <li><i class="icon iconfont">&#xe621;</i>求职意向：前端开发</li>
+                <li><i class="icon iconfont">&#xe621;</i>薪酬要求：15K元/月</li>
+                <li><i class="icon iconfont">&#xe621;</i>其它要求：五险</li>
+              </ul><img src="images/qr_code.png" alt="SNAIL-HH" class="qr-code">
+            </div>
           </div>
+        </div><img src="images/expectation_back.jpg" class="none">
+      </article>
+      <article role="article" class="clearfix htmlcss">
+        <div id="htmlcss" class="location scrollspy"></div>
+        <div class="shape-bottom">
+          <div class="title">
+            <h6 class="typename">部分项目前端开发</h6>
+            <div class="title-icon"><i class="icon iconfont">&#xe61b;</i></div>
+          </div>
+        </div>
+        <div style="max-width: 1200px;" class="clearfix container-medium">
+          <ul class="list">
+            <li class="clearfix">
+              <div style="background-image: url(images/htmlcss/htmlcss_pic_6.jpg);" class="pic-back">
+                <div class="pic-icon"><i class="icon iconfont">&#xe61b;</i></div><img src="images/htmlcss/htmlcss_pic_6.jpg" class="none">
+              </div>
+              <div class="content">
+                <div class="title">电力行业相关后台系统</div>
+                <div class="date">2019.9</div>
+                <div class="text"><p>vue-element-admin框架开发PC端后台系统</p><p>lang=pug模板引擎，Sass预编译工具</p><p></p><p>兼容：PC端主流浏览器</p></div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div style="background-image: url(images/htmlcss/htmlcss_pic_5.jpg);" class="pic-back">
+                <div class="pic-icon"><i class="icon iconfont">&#xe61b;</i></div><img src="images/htmlcss/htmlcss_pic_5.jpg" class="none">
+              </div>
+              <div class="content">
+                <div class="title">电力行业相关小程序</div>
+                <div class="date">2020.11</div>
+                <div class="text"><p>Vant框架开发手机端项目</p><p>lang=pug模板引擎，Sass预编译工具</p><p>兼容：手机端：微信、支付宝、主流浏览器</p></div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div style="background-image: url(images/htmlcss/htmlcss_pic_4.jpg);" class="pic-back">
+                <div class="pic-icon"><i class="icon iconfont">&#xe61b;</i></div><img src="images/htmlcss/htmlcss_pic_4.jpg" class="none">
+              </div>
+              <div class="content">
+                <div class="title">电力行业相关后台系统</div>
+                <div class="date">2020.12</div>
+                <div class="text"><p>Bootstrap3、AdminLTE框架开发PC端后台系统</p><p>兼容：PC端主流浏览器</p><p></p></div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div style="background-image: url(images/htmlcss/htmlcss_pic_3.jpg);" class="pic-back">
+                <div class="pic-icon"><i class="icon iconfont">&#xe61b;</i></div><img src="images/htmlcss/htmlcss_pic_3.jpg" class="none">
+              </div>
+              <div class="content">
+                <div class="title">电力行业相关后台系统</div>
+                <div class="date">2020.5</div>
+                <div class="text"><p>Bootstrap3、AdminLTE框架开发PC端后台系统</p><p>兼容：PC端主流浏览器</p><p></p></div>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div style="background-image: url(images/htmlcss/htmlcss_pic_2.jpg);" class="pic-back">
+                <div class="pic-icon"><i class="icon iconfont">&#xe61b;</i></div><img src="images/htmlcss/htmlcss_pic_2.jpg" class="none">
+              </div>
+              <div class="content">
+                <div class="title">行知聚能官网</div>
+                <div class="date">2019.9</div>
+                <div class="text"><p>响应式网站兼容PC和手机设置</p><p>使用Bootstrap4框架，Jade模板，Gulp工具，Sass预编译工具</p><p>兼容：Chrome、Firefox、Safari、Opera、IE11+、iOS、Android v5.0+</p></div><a href="http://www.symphergy.cn/" title="行知聚能官网" class="more">查看页面</a>
+              </div>
+            </li>
+            <li class="clearfix">
+              <div style="background-image: url(images/htmlcss/htmlcss_pic_1.jpg);" class="pic-back">
+                <div class="pic-icon"><i class="icon iconfont">&#xe61b;</i></div><img src="images/htmlcss/htmlcss_pic_1.jpg" class="none">
+              </div>
+              <div class="content">
+                <div class="title">个人兴趣网站</div>
+                <div class="date">2015.12</div>
+                <div class="text"><p>响应式网站兼容PC和手机设置</p><p>使用foundation框架，Jade模板，Gulp工具，Sass预编译工具</p><p>兼容：Chrome、Firefox、Safari、Opera 25+ (not Mini)、IE10+、iOS 7–8 (iPhone)、iOS 7–8 (iPad)、Android 4.2+ (Tablet & Phone)、Windows Phone 8+、Surface Tablet</p></div><a href="http://snail-hh.com/oscars/" title="个人兴趣网站" class="more">查看页面</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article role="article" class="clearfix webdesign">
+        <div id="webdesign" class="location scrollspy"></div>
+        <div class="shape-bottom">
+          <div class="title">
+            <h6 class="typename">部分页面设计</h6>
+            <div class="title-icon"><i class="icon iconfont">&#xe629;</i></div>
+          </div>
+        </div>
+        <div class="clearfix container-medium">
+          <ul class="grid-block large-up-4 medium-up-3 small-up-2 list-pic">
+            <li id="pic_8_" class="column">
+              <div class="box"><img src="images/box_w4_h3.png" alt="大屏页面设计">
+                <div style="background-image: url(images/design/web_pic_8.jpg);" class="pic"><img src="images/design/web_pic_8.jpg" class="none"></div>
+                <div class="title">大屏页面设计</div>
+                <div class="magnify"><a href="images/web_pic_8.jpg" title="大屏页面设计" class="big-pic"><i class="icon iconfont">&#xe629;</i></a></div>
+              </div>
+            </li>
+            <li id="pic_7_" class="column">
+              <div class="box"><img src="images/box_w4_h3.png" alt="大屏页面设计">
+                <div style="background-image: url(images/design/web_pic_7.jpg);" class="pic"><img src="images/design/web_pic_7.jpg" class="none"></div>
+                <div class="title">大屏页面设计</div>
+                <div class="magnify"><a href="images/web_pic_7.jpg" title="大屏页面设计" class="big-pic"><i class="icon iconfont">&#xe629;</i></a></div>
+              </div>
+            </li>
+            <li id="pic_6_" class="column">
+              <div class="box"><img src="images/box_w4_h3.png" alt="后台系统PC端页面设计">
+                <div style="background-image: url(images/design/web_pic_6.jpg);" class="pic"><img src="images/design/web_pic_6.jpg" class="none"></div>
+                <div class="title">后台系统PC端页面设计</div>
+                <div class="magnify"><a href="images/web_pic_6.jpg" title="后台系统PC端页面设计" class="big-pic"><i class="icon iconfont">&#xe629;</i></a></div>
+              </div>
+            </li>
+            <li id="pic_5_" class="column">
+              <div class="box"><img src="images/box_w4_h3.png" alt="后台系统PC端页面设计">
+                <div style="background-image: url(images/design/web_pic_5.jpg);" class="pic"><img src="images/design/web_pic_5.jpg" class="none"></div>
+                <div class="title">后台系统PC端页面设计</div>
+                <div class="magnify"><a href="images/web_pic_5.jpg" title="后台系统PC端页面设计" class="big-pic"><i class="icon iconfont">&#xe629;</i></a></div>
+              </div>
+            </li>
+            <li id="pic_4_" class="column">
+              <div class="box"><img src="images/box_w4_h3.png" alt="后台系统手机端页面设计">
+                <div style="background-image: url(images/design/web_pic_4.jpg);" class="pic"><img src="images/design/web_pic_4.jpg" class="none"></div>
+                <div class="title">后台系统手机端页面设计</div>
+                <div class="magnify"><a href="images/web_pic_4.jpg" title="后台系统手机端页面设计" class="big-pic"><i class="icon iconfont">&#xe629;</i></a></div>
+              </div>
+            </li>
+            <li id="pic_3_" class="column">
+              <div class="box"><img src="images/box_w4_h3.png" alt="企业官网">
+                <div style="background-image: url(images/design/web_pic_3.jpg);" class="pic"><img src="images/design/web_pic_3.jpg" class="none"></div>
+                <div class="title">企业官网</div>
+                <div class="magnify"><a href="images/web_pic_3.jpg" title="企业官网" class="big-pic"><i class="icon iconfont">&#xe629;</i></a></div>
+              </div>
+            </li>
+            <li id="pic_2_" class="column">
+              <div class="box"><img src="images/box_w4_h3.png" alt="购物网站手机端页面设计">
+                <div style="background-image: url(images/design/web_pic_2.jpg);" class="pic"><img src="images/design/web_pic_2.jpg" class="none"></div>
+                <div class="title">购物网站手机端页面设计</div>
+                <div class="magnify"><a href="images/web_pic_2.jpg" title="购物网站手机端页面设计" class="big-pic"><i class="icon iconfont">&#xe629;</i></a></div>
+              </div>
+            </li>
+            <li id="pic_1_" class="column">
+              <div class="box"><img src="images/box_w4_h3.png" alt="购物网站PC端页面设计">
+                <div style="background-image: url(images/design/web_pic_1.jpg);" class="pic"><img src="images/design/web_pic_1.jpg" class="none"></div>
+                <div class="title">购物网站PC端页面设计</div>
+                <div class="magnify"><a href="images/web_pic_1.jpg" title="购物网站PC端页面设计" class="big-pic"><i class="icon iconfont">&#xe629;</i></a></div>
+              </div>
+            </li>
+            <li class="column"></li>
+          </ul>
         </div>
       </article>
     </div>
+    <footer role="contentinfo" class="footer">
+      <h6 class="logo">SNAIL-HH</h6><small>©2021 - Other websites All Rights Reserv</small><a href="#home" title="返回顶部" class="back-to-top"><i class="icon iconfont">&#xe60e;</i></a>
+    </footer>
     <script src="scripts/vendor.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/prism.js"></script>
+    <script src="scripts/scrollspy.js"></script>
     <script>
-      $(function(){
-        var about = $('.about');
-        var work = $('.work');
-        var other = $('.other');
-        var added = false;
-      	$(document).on('scroll',function(){
-      		if($(window).scrollTop() > about.height() / 4){
-      			work.addClass('slide');
-      		}else{
-      			work.removeClass('slide');
-      		}
-      
-      		if($(window).scrollTop() > about.height() + work.height() / 4){
-      			other.addClass('slide');
-      		}else{
-      			other.removeClass('slide');
-      		}
+      (function($) {
+      	"use strict";
+      	$(document).ready(function() {
+      		$(document).foundation();
+      		initGetHWindow();
+      		initCheckNav();
+      		initNavbarSrcoll();
+      		initClickedEvents();
+      		initEasyChart();
+      		initLightBox();
+      		$('body').scrollspy({ target: '#nav-ul' });
+      		hideLoader();
       	});
-      });
+      
+      	//Set header to window
+      	function initGetHWindow() {
+      		var wHeight = $(window).height();
+      			$('.header').css('height',wHeight);
+      	}
+      
+      	function initEasyChart() {
+      		$('.chart').easyPieChart({
+      			easing: 'easeOutBounce',
+      			barColor: '#000',
+      			onStep: function(from, to, percent) {
+      				$(this.el).find('.percent').text(Math.round(percent));
+      			}
+      		});
+      	}
+      
+      	function hideLoader(){
+      		$('.header').addClass('slide');
+      		$('#loader').addClass('hidden opacity');
+      	}
+      
+      	function initLightBox(){
+      		$('.list-pic').magnificPopup({
+      			delegate: 'a.big-pic',
+      			type: 'image',
+      			tLoading: 'Loading image #%curr%...',
+      			overflowY: 'auto',
+      			//- removalDelay: 300,
+      			mainClass: 'my-mfp-zoom-in',
+      			gallery: {
+      				enabled: true,
+      				navigateByImgClick: true,
+      				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      			},
+      			image: {
+      				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+      				titleSrc: function(item) {
+      					return item.el.attr('title') + '<small>SNAIL-HH</small>';
+      				}
+      			}
+      		});
+      	}
+      
+      	//Click Envents
+      	function initClickedEvents() {
+      		$('.link-inpage').click(function(e) {
+      			var target = this.hash, $target = $(target);
+      			$('html, body').stop().animate({
+      				'scrollTop': $target.offset().top
+      			}, 800, 'easeOutQuad', function() {
+      				//window.location.hash = target;
+      			});
+      			return false;
+      		});
+      
+      		$('.link-inpage').first().parent().addClass('active');
+      	}
+      
+      	//Navbar Scroll
+      	function initNavbarSrcoll() {
+      		if ($('.header').length > 0) {
+      			$(window).on('scroll', function() {
+      				var mainbottom = $('.header').offset().top + $('.header').height();
+      				var stopWindow = Math.round($(window).scrollTop()) + $('#mainnav').outerHeight();
+      				conditionNavbar(stopWindow, mainbottom);
+      			});
+      		}
+      	}
+      
+      	//Check Navar Show
+      	function initCheckNav() {
+      		if ($('.header').length > 0) {
+      			var mainbottom = $('.header').offset().top + $('.header').height();
+      			var stopWindow = Math.round($(window).scrollTop()) + $('#mainnav').outerHeight();
+      			conditionNavbar(stopWindow, mainbottom);
+      		}
+      	}
+      
+      	//Condition Navbar
+      	function conditionNavbar(stopWindow, mainbottom) {
+      		if (stopWindow > mainbottom) {
+      			$('#mainnav').addClass('nav-fixed');
+      		} else {
+      			$('#mainnav').removeClass('nav-fixed back-white');
+      		}
+      		if ((stopWindow) > $('#mainnav').outerHeight()) {
+      			$('#mainnav').addClass('back-white');
+      		}
+      	}
+      })(jQuery);
     </script>
   </body>
 </html>
